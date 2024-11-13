@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Forms Challenge</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+
+    <main>
+      <form action="index.html" method="GET">
+        <section>
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="user-name" required />
+            </li>
+            <li>
+              <label for="email">Your E-Mail Address</label>
+              <input type="email" id="email" name="user-email" required />
+            </li>
+
+            <li>
+              <label for="phone">Your Phone Number</label>
+              <input type="text" id="phone" name="phone" required />
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <ul>
+            <li>
+              <label for="message">Your Message</label>
+              <textarea name="user-msg" id="message"></textarea>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <label for="howknow">How did you find us?</label>
+          <select name="howknow" id="user-way">
+            <option value="viaweb">Web Search</option>
+            <option value="viapeople">People</option>
+            <option value="viaadd">Advertisement</option>
+          </select>
+        </section>
+
+        <section>
+          <h2>How should we reply?</h2>
+          <ul>
+            <li class="inline-control">
+              <input
+                type="radio"
+                id="callme"
+                name="contact-method"
+                value="phonecall"
+                required
+              />
+              <label for="callme">Phone call</label>
+            </li>
+            <li class="inline-control">
+              <input
+                type="radio"
+                id="sendemail"
+                name="contact-method"
+                value="email"
+                required
+              />
+              <label for="sendemail">Email</label>
+            </li>
+            <li class="inline-control">
+              <input
+                type="radio"
+                id="noreply"
+                name="contact-method"
+                value="no"
+                required
+              />
+              <label for="noreply">Don't contact</label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="inline-control">
+          <input type="checkbox" id="agterm" name="agterm" required />
+          <label for="agterm">Accept Terms</label>
+        </section>
+
+        <section id="form-actions">
+          <button type="reset" class="btn-empty">Clear</button>
+          <button type="submit" class="btn-filled">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
